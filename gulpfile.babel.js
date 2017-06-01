@@ -1,1 +1,3 @@
-// 构建脚本使用 es6 语法
+import requireDir from 'require-dir';
+
+requireDir('./tasks');
