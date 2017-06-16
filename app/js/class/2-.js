@@ -59,3 +59,30 @@
   [a, ...b] = f()
   console.log(a, b)
 }
+
+{
+  // 对象解构赋值
+  let o = { p: 42, q: true }
+  let { p, q } = o
+  console.log(p, q)
+}
+
+{
+  // 默认值
+  let { a = 10, b = 5 } = { a: 100 }
+  console.log(a, b)
+}
+
+{
+  // 嵌套和数组的解构赋值
+  let metaData={
+    title:"abc",
+    test:[{
+      title:"test1",
+      desc:"desc"
+    }]
+  }
+  let {title:esTitle,test:[{title:cnTitle}]}=metaData
+  console.log(esTitle,cnTitle)
+
+}
